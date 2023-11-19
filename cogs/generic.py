@@ -1,6 +1,6 @@
 from discord.ext import commands
 
-class generic(commands.Cog):
+class Generic(commands.Cog):
     def __init__(self, client):
         self.client = client
 
@@ -19,4 +19,4 @@ class generic(commands.Cog):
         await ctx.send(f"{expr}")
 
 async def setup(client):
-    await client.add_cog(generic(client))
+    await client.add_cog(Generic(client))
